@@ -16,7 +16,11 @@ customerRouter
     const customer = req.body;
     CustomerList.push(customer)
     res.status(200).json({status: "SUCCESS"})
-
+})
+.post("/edit/:id", async(req,res) => {
+    const customer = req.body;
+    CustomerList.splice(req.params.id, 1, customer)
+    res.status(200).json({status: "SUCCESS"})
 })
 
 module.exports = customerRouter;
