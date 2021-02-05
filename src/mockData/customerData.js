@@ -1,4 +1,4 @@
-customerData = [
+const customerData = [
     {
         "name" : "Albert Felix",
         "age" : 26,
