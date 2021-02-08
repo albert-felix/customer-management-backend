@@ -17,7 +17,7 @@ userRouter.post("/login", (req,res) => {
         }
     }
     if(!userFound){
-        res.status(500).json({status: 'FAIL'})
+        res.status(200).json({status: 'FAIL'})
     }
     
 })
