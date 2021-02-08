@@ -20,7 +20,7 @@ customerRouter
 })
 .post("/add", (req,res) => {
     const customer = req.body;
-    customer[id] = CustomerList.length + 1
+    customer['id'] = CustomerList.length + 1
     CustomerList.push(customer)
     res.status(200).json({status: "SUCCESS"})
 })
